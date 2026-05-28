@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BoozBoard — Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #080611;
+      color: #F0EFF7;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 48px 24px 80px;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .brand {
+      font-size: 22px;
+      font-weight: 900;
+      color: #E94E77;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #F0EFF7;
+      margin-bottom: 6px;
+      letter-spacing: -0.5px;
+    }
+
+    .updated {
+      font-size: 13px;
+      color: #7A7990;
+      margin-bottom: 48px;
+    }
+
+    section {
+      margin-bottom: 36px;
+      padding-bottom: 36px;
+      border-bottom: 1px solid #1E1632;
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-size: 15px;
+      font-weight: 800;
+      color: #F0EFF7;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: #7A7990;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    p + p {
+      margin-top: 12px;
+    }
+
+    strong {
+      color: #F0EFF7;
+      font-weight: 700;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 8px;
+    }
+
+    ul li {
+      color: #7A7990;
+      font-size: 15px;
+      padding: 4px 0 4px 16px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '•';
+      color: #E94E77;
+      position: absolute;
+      left: 0;
+    }
+
+    a {
+      color: #E94E77;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 60px;
+      font-size: 13px;
+      color: #3A3950;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="brand">BoozBoard</div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: May 2026</p>
+
+    <section>
+      <h2>Overview</h2>
+      <p>
+        BoozBoard helps groups of friends track a shared night out in real time. To make
+        live syncing and cloud backup possible, some data is transmitted to and stored on
+        Firebase (Google's cloud platform). This policy explains exactly what is stored,
+        where, and for how long.
+      </p>
+    </section>
+
+    <section>
+      <h2>What Goes to Firebase — Active Sessions</h2>
+      <p>When you create or join a group, the following is sent to Firebase Firestore for the duration of that session only:</p>
+      <ul>
+        <li>The group code and group name</li>
+        <li>Your display name and when you joined</li>
+        <li>The drinks you log (label, icon, volume, ABV, timestamp)</li>
+        <li>Photos you add during the night (uploaded to Firebase Storage)</li>
+      </ul>
+      <p style="margin-top: 12px;">
+        Session data in Firestore is automatically deleted the moment the group host ends
+        the night. Your body weight and biological sex are <strong>never sent to Firebase</strong> —
+        they stay on your device only and are used solely to estimate your BAC locally.
+      </p>
+    </section>
+
+    <section>
+      <h2>What Goes to Firebase — Vault Backup</h2>
+      <p>
+        When a night ends, a summary of that session (group name, drink log, and photos)
+        is backed up to Firebase Firestore under a randomly generated Vault ID. This ID
+        is a random string of characters with no connection to your name, email, phone
+        number, or any real-world identity.
+      </p>
+      <p>
+        This backup allows you to restore your nights on a new device by entering your
+        Vault code. You can view your Vault ID in the Profile tab at any time.
+      </p>
+      <p>
+        Friends you add are stored <strong>locally on your device only</strong> and are
+        never uploaded to any server.
+      </p>
+    </section>
+
+    <section>
+      <h2>What Stays on Your Device Only</h2>
+      <p>The following is stored only in your phone's local storage:</p>
+      <ul>
+        <li>Your body weight and biological sex (for BAC estimates)</li>
+        <li>Your personal profile (name, weight, sex) for auto-fill convenience</li>
+        <li>Your friends list (names and their Vault codes)</li>
+        <li>Your saved crews</li>
+      </ul>
+      <p style="margin-top: 12px;">Deleting the app permanently removes all locally stored data.</p>
+    </section>
+
+    <section>
+      <h2>Photos</h2>
+      <p>
+        Photos added during a session are uploaded to Firebase Storage and are accessible
+        to all members of that group. Photos are not automatically deleted after the night
+        ends. Do not upload photos you would not want other group members to see. If you
+        need a photo removed, contact us with the group code.
+      </p>
+    </section>
+
+    <section>
+      <h2>Subscriptions</h2>
+      <p>
+        BoozBoard Pro subscriptions are processed entirely by Apple (App Store) or Google
+        (Play Store). We do not store or process your payment details. Subscription status
+        is verified through the respective platform's billing system. For billing support,
+        contact Apple or Google directly.
+      </p>
+    </section>
+
+    <section>
+      <h2>Firebase and Google</h2>
+      <p>
+        BoozBoard uses Firebase, operated by Google LLC. Data stored through Firebase is
+        subject to Google's privacy policy:
+        <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>.
+      </p>
+      <p>
+        Group codes and Vault IDs are random identifiers — they are not linked to any
+        account, email address, phone number, or real-world identity.
+      </p>
+    </section>
+
+    <section>
+      <h2>BAC Estimates</h2>
+      <p>
+        BoozBoard calculates estimated Blood Alcohol Content (BAC) using the Widmark
+        formula. This is a mathematical estimate for general awareness only — not a
+        medical measurement and not a substitute for a certified breathalyzer.
+        <strong>Never use BAC estimates in this app to make decisions about driving,
+        operating machinery, or any other safety-critical activity.</strong>
+      </p>
+    </section>
+
+    <section>
+      <h2>Children</h2>
+      <p>
+        BoozBoard is not intended for users under the legal drinking age in their
+        jurisdiction (21 in the United States). We do not knowingly collect information
+        from minors. If you believe a minor has used this app, please delete it from
+        their device immediately.
+      </p>
+    </section>
+
+    <section>
+      <h2>Your Rights</h2>
+      <ul>
+        <li><strong>Local data:</strong> uninstall the app at any time to delete everything stored on your device.</li>
+        <li><strong>Session data:</strong> automatically deleted from Firebase when the night ends.</li>
+        <li><strong>Vault backup:</strong> contact us with your Vault ID to request deletion of your backed-up nights.</li>
+        <li><strong>Photos:</strong> contact us with the group code to request removal of specific photos.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy? Reach us through the app's listing on the App Store.
+        We will update this policy whenever our data practices change.
+      </p>
+    </section>
+
+    <div class="footer">© 2026 BoozBoard. All rights reserved.</div>
+
+  </div>
+</body>
+</html>
